@@ -128,3 +128,5 @@ ratio.fun=function(x,y,N,n,mu.x){
   v =(1-(n/N))*(s_squar/n)
   c(mu_y-2*sqrt(v),mu_y+2*sqrt(v),mu_y)
 }
+
+#######
