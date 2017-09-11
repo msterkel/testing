@@ -3,13 +3,14 @@
 sum() # sums up values
 str() # displays info of variable
 summary() #displays info
-sample() #takes sample
-do()* ## used for simulations // use library(mosaic)
-print() ## prints
-(1:5) ## writes numbers one through five
-
-
-abline() ##add straight line to plot
+sample() # takes sample
+do()* # used for simulations // use library(mosaic)
+print() # prints
+(1:5) # writes numbers one through five
+as.numeric() # wrap obect/variable to make it numeric false
+x> 10 # determine if object 'x' is greater than 10 // also works on vectors
+cbind() # adds collumn to data
+abline() # add straight line to plot
 
 ##Markdown###
 
