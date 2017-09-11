@@ -1,9 +1,21 @@
 ###USefull code ####
 ###             ###
+sum() # sums up values
+str() # displays info of variable
+summary() #displays info
+sample() #takes sample
+do()* ## used for simulations // use library(mosaic)
+print() ## prints
+(1:5) ## writes numbers one through five
 
 
+abline() ##add straight line to plot
 
+##Markdown###
 
+# {r, echo=FALSE}
+# {r, eval=FALSE}
+# {r, include=FALSE}
 
 
 ####Functons####
