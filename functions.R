@@ -1,3 +1,13 @@
+###USefull code ####
+###             ###
+
+
+
+
+
+
+####Functons####
+####        ####
 f=function(o,e){
   sum((o-e)^2/e)
   
