@@ -2,7 +2,7 @@
 ###             ###
 sum() # sums up values
 str() # displays info of variable
-summary() #displays info
+summary() #displays info and 5 figure summary
 sample() # takes sample
 do()* # used for simulations // use library(mosaic)
 print() # prints
@@ -11,12 +11,24 @@ as.numeric() # wrap obect/variable to make it numeric false
 x> 10 # determine if object 'x' is greater than 10 // also works on vectors
 cbind() # adds collumn to data
 abline() # add straight line to plot
+dim() # gives dimensions  
+data.frame() # creates data frame, arguments write data by collumn
+head(df,10) # gives first ten rows of a dataframe 'df', in this case. 
+tail(df,5) # can be used to gives last rows 
+
+
 
 ##Markdown###
+   
+# {r, echo=FALSE} // show output without showing code  
+# {r, eval=FALSE} // Don't run code
+# {r, include=FALSE} //
 
-# {r, echo=FALSE}
-# {r, eval=FALSE}
-# {r, include=FALSE}
+##Finding inquality##
+
+cdc$ow <-(cdc$weight>cdc$wtdesire) ## New var calculating inequality (cdc is the data set)
+an <-as.numeric(cdc$ow) ## Make logical into numeric
+sum(an) ## sum, then can divide by total number of observations
 
 
 ####Functons####
