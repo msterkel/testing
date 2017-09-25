@@ -1,6 +1,6 @@
 ###USefull code ####
 ###             ###
-sum() # sums up values
+sum() # sums up values 
 str() # displays info of variable
 summary() #displays info and 5 figure summary
 sample() # takes sample
@@ -15,20 +15,42 @@ dim() # gives dimensions
 data.frame() # creates data frame, arguments write data by collumn
 head(df,10) # gives first ten rows of a dataframe 'df', in this case. 
 tail(df,5) # can be used to gives last rows 
-
+for(variable in vector){ your_list_of_commands}  # variable is most commonly i
+## for loop example === for(i in 1:10){print(i^2)} //
 
 
 ##Markdown###
    
 # {r, echo=FALSE} // show output without showing code  
 # {r, eval=FALSE} // Don't run code
-# {r, include=FALSE} //
+# {r, include=FALSE} // Prevents code and results from showing in knitted doc,
+#                       still evaluates and uses code through file
 
 ##Finding inquality##
 
 cdc$ow <-(cdc$weight>cdc$wtdesire) ## New var calculating inequality (cdc is the data set)
 an <-as.numeric(cdc$ow) ## Make logical into numeric
 sum(an) ## sum, then can divide by total number of observations
+
+##Graphing Template##
+ggplot(data = <DATA>) + 
+  <GEOM_FUNCTION>(
+    mapping = aes(<MAPPINGS>),
+    stat = <STAT>, 
+    position = <POSITION>
+  ) +
+  <COORDINATE_FUNCTION> +
+  <FACET_FUNCTION>
+
+## plot by specific variable subplots
+ggplot(data=mpg)+
+  geom_count(mapping=aes(x=displ,y=hwy))+
+  facet_wrap(~class)
+
+## plot different colors for variables (class)
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
+
 
 
 ####Functons####
